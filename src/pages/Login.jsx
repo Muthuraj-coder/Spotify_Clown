@@ -15,7 +15,8 @@ const Login = () => {
     setMessage('');
     setIsSuccess(false);
     try {
-      const res = await fetch('http://localhost:5000/login', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const res = await fetch(`${apiUrl}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })

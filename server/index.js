@@ -4,17 +4,18 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 const app = express();
-const PORT = 5000;
-const JWT_SECRET = 'your_jwt_secret'; // Change this to a strong secret in production
+const PORT = process.env.PORT || 5000;
+const JWT_SECRET = process.env.JWT_SECRET || 'muthu123'; // Change this to a strong secret in production
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://muthurajd23cse:Muthu4855@crud.ftlqkl0.mongodb.net/?retryWrites=true&w=majority&appName=CRUD', {
+mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://muthurajd23cse:Muthu4855@crud.ftlqkl0.mongodb.net/?retryWrites=true&w=majority&appName=CRUD', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
