@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   background: none;
+  padding: 20px;
 }
 
 .spotify-login-form {
@@ -13,6 +14,7 @@
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   border: 1px solid #e6e6e6;
   width: 350px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +30,7 @@ h2 {
   margin-bottom: 24px;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .input-group {
@@ -53,6 +56,8 @@ h2 {
   transition: border-color 0.2s;
   background: #fff;
   color: #191414;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .input-group input:focus {
@@ -79,7 +84,7 @@ h2 {
 
 .login-links {
   width: 100%;
-  text-align: right;
+  text-align: center;
   margin-top: 8px;
   margin-bottom: 12px;
 }
@@ -127,4 +132,63 @@ h2 {
 .signup-btn:hover {
   background: #1ed760;
   border: 1px solid #1db954;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+  .spotify-login-container {
+    padding: 10px;
+  }
+  
+  .spotify-login-form {
+    padding: 30px 20px 20px 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .spotify-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 16px;
+  }
+  
+  .input-group input {
+    padding: 12px 14px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .login-btn, .signup-btn {
+    padding: 14px 0;
+    font-size: 1rem;
+  }
+  
+  .login-links {
+    margin-top: 12px;
+  }
+  
+  .login-links a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .spotify-login-form {
+    padding: 25px 15px 15px 15px;
+  }
+  
+  .spotify-logo {
+    width: 90px;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
 } 

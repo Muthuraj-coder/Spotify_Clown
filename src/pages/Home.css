@@ -445,4 +445,218 @@
 }
 .footer-player audio {
   height: 32px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .spotify-app-container {
+    flex-direction: column;
+  }
+  
+  .spotify-sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 2px solid #282828;
+  }
+  
+  .sidebar-logo-row {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+  }
+  
+  .sidebar-logo {
+    width: 80px;
+  }
+  
+  .sidebar-home-emoji {
+    font-size: 2rem;
+  }
+  
+  .spotify-main-content {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .improved-topbar {
+    padding: 16px 0 12px 0;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .topbar-section {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .topbar-left, .topbar-right {
+    justify-content: center;
+    flex: unset;
+  }
+  
+  .topbar-logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 0 8px 0;
+  }
+  
+  .spotify-search {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+  
+  .album-cards {
+    gap: 20px;
+    padding-bottom: 12px;
+  }
+  
+  .album-card {
+    width: 180px;
+    padding: 20px;
+  }
+  
+  .album-cover {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .album-title {
+    font-size: 0.9rem;
+  }
+  
+  .album-artist {
+    font-size: 0.8rem;
+  }
+  
+  .footer-player {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .footer-player img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-player .footer-song-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .spotify-sidebar {
+    padding: 15px 0;
+  }
+  
+  .sidebar-logo-row {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .sidebar-logo {
+    width: 70px;
+  }
+  
+  .sidebar-home-emoji {
+    font-size: 1.8rem;
+  }
+  
+  .spotify-main-content {
+    padding: 0 15px 15px 15px;
+  }
+  
+  .improved-topbar {
+    padding: 12px 0 8px 0;
+  }
+  
+  .topbar-logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .spotify-search {
+    max-width: 250px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+  
+  .album-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+  
+  .album-cards {
+    gap: 15px;
+  }
+  
+  .album-card {
+    width: 160px;
+    padding: 16px;
+  }
+  
+  .album-cover {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .album-title {
+    font-size: 0.85rem;
+  }
+  
+  .album-artist {
+    font-size: 0.75rem;
+  }
+  
+  .logout-btn {
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .spotify-sidebar {
+    padding: 12px 0;
+  }
+  
+  .sidebar-logo-row {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  
+  .sidebar-logo {
+    width: 60px;
+  }
+  
+  .sidebar-home-emoji {
+    font-size: 1.6rem;
+  }
+  
+  .spotify-main-content {
+    padding: 0 12px 12px 12px;
+  }
+  
+  .album-card {
+    width: 140px;
+    padding: 14px;
+  }
+  
+  .album-cover {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .album-title {
+    font-size: 0.8rem;
+  }
+  
+  .album-artist {
+    font-size: 0.7rem;
+  }
 } 
